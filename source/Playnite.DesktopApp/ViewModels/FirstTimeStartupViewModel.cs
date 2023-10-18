@@ -318,7 +318,7 @@ namespace Playnite.DesktopApp.ViewModels
             }
             catch (Exception e) when (!PlayniteEnvironment.ThrowAllErrors)
             {
-                logger.Error(e, $"Failed to firt time setup addon {addonId}");
+                logger.Error(e, $"Failed to first time setup addon {addonId}");
                 return false;
             }
 

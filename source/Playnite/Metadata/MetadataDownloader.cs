@@ -76,7 +76,7 @@ namespace Playnite.Metadata
             }
             catch (Exception e) when (!PlayniteEnvironment.ThrowAllErrors)
             {
-                logger.Error(e, $"Failed to download metadat from library plugin downloader {game.PluginId}.");
+                logger.Error(e, $"Failed to download metadata from library plugin downloader {game.PluginId}.");
                 return null;
             }
         }
@@ -129,7 +129,7 @@ namespace Playnite.Metadata
                 case MetadataField.InstallSize:
                     return metadata.InstallSize != null;
                 default:
-                    throw new NotSupportedException($"Uknown metadata field {field}");
+                    throw new NotSupportedException($"Unknown metadata field {field}");
             }
         }
 
